@@ -1,0 +1,107 @@
+.home-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Courier New', monospace;
+  background-color: #f5f5f5;
+}
+
+.sidebar {
+  width: 60px;
+  background-color: #1e1f2f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  align-items: center;
+}
+
+.sidebar:hover {
+  width: 200px;
+  align-items: flex-start;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.sidebar-menu button {
+  background-color: #2c2e3f;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.sidebar-menu button:hover {
+  background-color: #3c3f55;
+}
+
+.icon {
+  font-size: 18px;
+  min-width: 20px;
+  margin-right: 10px;
+}
+
+.label {
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar:hover .label {
+  opacity: 1;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.titulo-mensalidade {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-family: 'Courier New', monospace;
+}
+
+.mensalidade-container {
+  background-color: #1e1f2f;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mensalidade-card {
+  background-color: #2c2e4f;
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+}
+
+.mensalidade-card h3 {
+  margin: 0 0 10px 0;
+}
+
+.mensalidade-card p {
+  margin: 4px 0;
+  font-size: 14px;
+}
